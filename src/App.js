@@ -29,12 +29,43 @@ export const App = () => {
           )}
 
           <div
-            className={
-              activeMenu
-                ? "dark:bg-main-bg bg-main-bg min-h-screen md:ml-72 w-full"
-                : "ark:bg-main-bg bg-main-bg min-h-screen w-full flex-2"
-            }
-          ></div>
+            className={`dark:bg-main-bg bg-main-bg min-h-screen w-full ${
+              activeMenu ? " md:ml-72" : "flex-2"
+            }`}
+          >
+            <div className="fixed md:static bg-main0bg dark:bg-main-dark-bg navbar w-full">
+              Navbar
+            </div>
+          </div>
+          <div>
+            <Routes>
+              {/* Dashboard */}
+              <Route path="/" element="ECommerce" />
+              <Route path="/ecommerce" element="ECommerce" />
+
+              {/* Pages */}
+              <Route path="/orders" element="Orders" />
+              <Route path="/employees" element="Employees" />
+              <Route path="/customers" element="Customers" />
+
+              {/* Apps */}
+
+              <Route path="/kanban" element="Kanban" />
+              <Route path="/editor" element="Editor" />
+              <Route path="/calender" element="Calender" />
+              <Route path="/color-picker" element="Color-picker" />
+
+              {/* Charts */}
+              <Route path="/line" element="Line" />
+              <Route path="/area" element="Area" />
+              <Route path="/bar" element="Bar" />
+              <Route path="/pie" element="Pie" />
+              <Route path="/financial" element="Financial" />
+              <Route path="/color-mapping" element="ColorMapping" />
+              <Route path="/pyramid" element="Pyramid" />
+              <Route path="/stack" element="stack" />
+            </Routes>
+          </div>
         </div>
       </BrowserRouter>
     </div>
