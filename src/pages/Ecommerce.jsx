@@ -124,12 +124,12 @@ const Ecommerce = () => {
               <div className="mt-5">
                 <SparkLine
                   currentColor={currentColor}
-                  id="line-sparkLine"
-                  type="Line"
-                  height="80px"
-                  width="250px"
+                  id="column-sparkLine"
+                  height="100px"
+                  type="column"
                   data={SparklineAreaData}
-                  color={currentColor}
+                  width="320"
+                  color="rgb(242, 252, 253)"
                 />
               </div>
               <div className="mt-10">
@@ -165,11 +165,11 @@ const Ecommerce = () => {
             <div className="mt-4">
               <SparkLine
                 currentColor={currentColor}
-                id="column-sparkLine"
+                id="line-sparkLine"
                 height="100px"
-                type="Column"
+                type="Line"
                 data={SparklineAreaData}
-                width="320"
+                width="250px"
                 color="rgb(242, 252, 253)"
               />
             </div>
