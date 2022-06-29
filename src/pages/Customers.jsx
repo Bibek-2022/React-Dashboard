@@ -14,7 +14,7 @@ import {
 } from "@syncfusion/ej2-react-grids";
 
 import { customersData, customersGrid } from "../data/dummy";
-import { Header } from "../components";
+import { Header } from "../components/Header.jsx";
 
 const Customers = () => {
   const selectionsettings = { persistSelection: true };
