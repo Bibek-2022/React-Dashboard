@@ -124,12 +124,12 @@ const Ecommerce = () => {
               <div className="mt-5">
                 <SparkLine
                   currentColor={currentColor}
-                  id="column-sparkLine"
-                  height="100px"
-                  type="column"
+                  id="line-sparkLine"
+                  type="Line"
+                  height="80px"
+                  width="250px"
                   data={SparklineAreaData}
-                  width="320"
-                  color="rgb(242, 252, 253)"
+                  color={currentColor}
                 />
               </div>
               <div className="mt-10">
@@ -165,11 +165,11 @@ const Ecommerce = () => {
             <div className="mt-4">
               <SparkLine
                 currentColor={currentColor}
-                id="line-sparkLine"
+                id="column-sparkLine"
                 height="100px"
-                type="Line"
+                type="Column"
                 data={SparklineAreaData}
-                width="250px"
+                width="320"
                 color="rgb(242, 252, 253)"
               />
             </div>
@@ -394,4 +394,5 @@ const Ecommerce = () => {
     </div>
   );
 };
+
 export default Ecommerce;
